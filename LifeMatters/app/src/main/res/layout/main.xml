@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<ImageView
+		android:layout_height="match_parent"
+		android:layout_width="wrap_content"
+		android:src="@drawable/backdrop"
+		android:scaleType="centerCrop"/>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:weightSum="2">
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_weight="1"
+			android:gravity="top|center">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="Life"
+					android:textSize="70sp"
+					android:textColor="#D4D4D4"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="Matters"
+					android:textSize="40sp"
+					android:textColor="#D4D4D4"/>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_weight="1"
+			android:gravity="bottom|center">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:gravity="bottom|center">
+
+				<View
+					android:background="#D4D4D4"
+					android:layout_height="1dp"
+					android:layout_width="match_parent"/>
+
+				<Button
+					style="?android:attr/buttonBarButtonStyle"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="Play game"
+					android:textColor="#D6D6D6"/>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</FrameLayout>
+
